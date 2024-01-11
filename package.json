@@ -1,0 +1,27 @@
+{
+  "name": "game-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "dev:client": "tauri dev",
+    "build:mac": "tauri build --target universal-apple-darwin",
+    "build:windows": "tauri build",
+    "build:web": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.5.9",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "@pixi/assets": "^7.3.3",
+    "@pixi/basis": "^7.3.3",
+    "@pixi/sound": "^5.2.2",
+    "@tauri-apps/api": "^1.5.3",
+    "@tweenjs/tween.js": "^21.0.0",
+    "pixi.js": "^7.3.3"
+  }
+}
